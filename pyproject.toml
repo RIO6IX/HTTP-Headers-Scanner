@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "http-headers-scanner"
+version = "1.0.0"
+description = "Scan a website for missing or weak HTTP security headers."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Chanuka Isuru Sampath (RIO6IX)" }
+]
+dependencies = [
+  "httpx>=0.27.0",
+  "rich>=13.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0"
+]
+
+[project.scripts]
+headers = "http_headers_scanner:main"
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+
+[tool.setuptools]
+py-modules = ["http_headers_scanner"]
