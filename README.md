@@ -1,5 +1,7 @@
 # HTTP Headers Scanner
 
+![HTT_Headers_Scanner](learn/Header-scan-1.png)
+
 HTTP Headers Scanner checks a website's HTTP security headers and identifies missing or weak controls such as CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy.
 
 Created with credit to **Chanuka Isuru Sampath (RIO6IX)**.
